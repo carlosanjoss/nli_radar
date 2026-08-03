@@ -1,0 +1,83 @@
+model:
+  name: joeddav/xlm-roberta-large-xnli
+  device: auto
+  batch_size: 8
+  max_length: 512
+  local_files_only: false
+  use_amp: true
+  # P(label) = softmax apenas entre contradição e entailment, conforme o model card.
+  # Use three_way_entailment somente para reproduzir exatamente o cálculo do código legado.
+  score_mode: entailment_vs_contradiction
+  label_ids:
+    contradiction: 0
+    neutral: 1
+    entailment: 2
+
+hypotheses_file: layer3/hypotheses.yaml
+
+input:
+  path: data/reddit_tupye_2500_psicologia_sem_gabarito.csv
+  text_column: auto
+  id_column: auto
+  sample_limit: null
+  gate:
+    column: null
+    positive_values: [1, true, hate, sim, positivo]
+
+output_dir: outputs/layer3
+
+runtime:
+  comment_batch_size: 16
+
+aggregation:
+  max_weight: 0.70
+  mean_weight: 0.30
+  counter_weight: 0.50
+  construct_max_weight: 0.70
+  construct_mean_weight: 0.30
+
+# Limiares provisórios: precisam ser calibrados em dados anotados por humanos.
+thresholds:
+  default: 0.50
+  dimensions:
+    disrespect: 0.50
+    insult: 0.50
+    humiliation: 0.50
+    dehumanization: 0.50
+    violence: 0.50
+    exclusion: 0.50
+    identity_attack: 0.50
+    threat: 0.50
+  toxicity_low: 0.25
+  toxicity_medium: 0.45
+  toxicity_high: 0.70
+
+toxicity_weights:
+  severe: 0.45
+  identity: 0.25
+  incivility: 0.20
+  mean_all: 0.10
+
+lexical_rules:
+  sexual_violence:
+    - deveria ser estupr
+    - merece ser estupr
+    - vou estupr
+    - tinha que estupr
+  physical_threat:
+    - vou te matar
+    - tem que matar
+    - deveria morrer
+    - merece morrer
+    - tem que apanhar
+    - vou quebrar
+  dehumanization:
+    - não são humanos
+    - nao sao humanos
+    - não é gente
+    - nao e gente
+    - são uma praga
+    - sao uma praga
+    - são parasitas
+    - sao parasitas
+

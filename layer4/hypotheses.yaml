@@ -1,0 +1,245 @@
+dimensions:
+  - code: dehumanization
+    name: Desumanização
+    constructs:
+      - code: animalizing
+        name: Desumanização animalizante
+        hypotheses:
+          - code: H-A1
+            kind: positive
+            text: O autor do comentário compara as pessoas do grupo social a que se refere a animais, insetos, parasitas ou pragas, negando sua condição humana.
+          - code: H-A2
+            kind: positive
+            text: O autor do comentário associa as pessoas do grupo social a que se refere a sujeira, contaminação, doença ou ameaça visceral que precisa ser eliminada ou contida.
+          - code: H-A3
+            kind: positive
+            text: O autor do comentário representa as pessoas do grupo social a que se refere como primitivas, selvagens ou instintivas, desprovidas de racionalidade ou autocontrole.
+          - code: H-A-NEG
+            kind: negative
+            text: O autor do comentário usa linguagem figurada para descrever uma situação social sem aplicá-la depreciativamente a pessoas de um grupo social específico.
+          - code: H-A-NEU
+            kind: neutral
+            text: O autor do comentário descreve ou analisa o uso histórico ou social de linguagem animalizante sem endossá-la ou reproduzi-la como afirmação própria.
+      - code: mechanistic
+        name: Desumanização mecanicista
+        hypotheses:
+          - code: H-B1
+            kind: positive
+            text: O autor do comentário trata as pessoas do grupo social a que se refere como objetos, ferramentas ou recursos intercambiáveis, sem agência ou individualidade.
+          - code: H-B2
+            kind: positive
+            text: O autor do comentário nega que as pessoas do grupo social a que se refere possuam sentimentos, sofrimento ou vida interior reconhecíveis.
+          - code: H-B3
+            kind: positive
+            text: O autor do comentário reduz as pessoas do grupo social a que se refere a uma função, estatística ou problema técnico a ser gerenciado, sem reconhecer sua condição de sujeitos.
+          - code: H-B-NEG
+            kind: negative
+            text: O autor do comentário trata de questões institucionais ou políticas envolvendo grupos sociais sem reduzir as pessoas a objetos ou negar sua subjetividade.
+          - code: H-B-NEU
+            kind: neutral
+            text: O autor do comentário descreve características ou condições do grupo social a que se refere de forma funcional, sem emitir julgamento sobre sua humanidade ou subjetividade.
+      - code: moral_disengagement
+        name: Desengajamento moral
+        hypotheses:
+          - code: H-C1
+            kind: positive
+            text: O autor do comentário afirma explicitamente que as pessoas do grupo social a que se refere não possuem dignidade, valor humano ou não merecem consideração moral.
+          - code: H-C2
+            kind: positive
+            text: O autor do comentário posiciona as pessoas do grupo social a que se refere em uma hierarquia em que ocupam nível inferior ao humano pleno, como sub-humanos ou humanos de segunda categoria.
+          - code: H-C3
+            kind: positive
+            text: O autor do comentário sugere que a vida ou o bem-estar das pessoas do grupo social a que se refere tem menor valor do que o de outras pessoas, tornando-as descartáveis.
+          - code: H-C-NEG
+            kind: negative
+            text: O autor do comentário critica moralmente posições, comportamentos ou práticas do grupo social a que se refere sem negar que seus membros possuam dignidade ou valor humano.
+          - code: H-C-NEU
+            kind: neutral
+            text: O autor do comentário descreve situações de exclusão ou marginalização do grupo social a que se refere sem julgar se seus membros merecem consideração moral.
+
+  - code: authoritarianism
+    name: Autoritarismo discursivo
+    constructs:
+      - code: authority_submission
+        name: Submissão à autoridade
+        hypotheses:
+          - code: H-A1
+            kind: positive
+            text: O autor do comentário apela a uma autoridade, como Estado, lei, polícia, religião ou tradição, para justificar o controle ou a supressão do grupo social a que se refere.
+          - code: H-A2
+            kind: positive
+            text: O autor do comentário apresenta a obediência a normas tradicionais como superior à igualdade de direitos do grupo social a que se refere.
+          - code: H-A3
+            kind: positive
+            text: O autor do comentário enquadra as reivindicações ou resistências do grupo social a que se refere como ilegítimas por contrariarem uma ordem estabelecida e sancionada.
+          - code: H-A-NEG
+            kind: negative
+            text: O autor do comentário expressa respeito por autoridades ou normas tradicionais sem defender que sejam usadas para controlar ou suprimir grupos sociais específicos.
+          - code: H-A-NEU
+            kind: neutral
+            text: O autor do comentário menciona autoridades, leis ou normas sociais sem afirmar que devem ser usadas para controlar ou julgar o grupo social a que se refere.
+      - code: punitive_aggression
+        name: Agressividade punitiva
+        hypotheses:
+          - code: H-B1
+            kind: positive
+            text: O autor do comentário defende medidas punitivas ou coercitivas contra o grupo social a que se refere como forma necessária de restaurar a ordem social.
+          - code: H-B2
+            kind: positive
+            text: O autor do comentário enquadra a repressão ou o controle violento do grupo social a que se refere como resposta legítima e sancionada pela autoridade ou pela maioria.
+          - code: H-B3
+            kind: positive
+            text: O autor do comentário apresenta o grupo social a que se refere como ameaça à segurança ou à coesão social que justifica resposta autoritária imediata.
+          - code: H-B-NEG
+            kind: negative
+            text: O autor do comentário discorda de comportamentos ou posições do grupo social a que se refere sem defender punição coercitiva ou intervenção repressiva contra seus membros.
+          - code: H-B-NEU
+            kind: neutral
+            text: O autor do comentário descreve situações de conflito ou tensão envolvendo o grupo social a que se refere sem recomendar resposta punitiva ou repressiva.
+      - code: exclusionary_conventionalism
+        name: Convencionalismo excludente
+        hypotheses:
+          - code: H-C1
+            kind: positive
+            text: O autor do comentário apresenta o grupo social a que se refere como desvio da normalidade social ou cultural, enquadrando sua existência como aberrante ou patológica.
+          - code: H-C2
+            kind: positive
+            text: O autor do comentário enquadra a existência ou visibilidade do grupo social a que se refere como ameaça à família, à tradição, aos valores morais ou à identidade nacional.
+          - code: H-C3
+            kind: positive
+            text: O autor do comentário demarca quem pertence à norma social legítima e exclui o grupo social a que se refere dessa categoria com base em sua identidade.
+          - code: H-C-NEG
+            kind: negative
+            text: O autor do comentário discute diferenças culturais ou comportamentais entre grupos sem afirmar que algum deles desvia de uma norma legítima ou ameaça a ordem social.
+          - code: H-C-NEU
+            kind: neutral
+            text: O autor do comentário menciona normas sociais ou valores tradicionais sem sugerir que o grupo social a que se refere os viola ou representa ameaça a eles.
+
+  - code: revictimization
+    name: Revitimização e autovitimização
+    constructs:
+      - code: minority_blaming
+        name: Culpabilização da minoria social
+        hypotheses:
+          - code: H-A1
+            kind: positive
+            text: O autor do comentário afirma que o grupo social a que se refere é responsável pela violência, preconceito, infortúnio, dano, discriminação ou exclusão que sofre, atribuindo a causa a características ou comportamentos do próprio grupo.
+          - code: H-A2
+            kind: positive
+            text: O autor do comentário sugere que o grupo social a que se refere poderia ter evitado o dano sofrido se tivesse agido de forma diferente, implicando que a vitimização é resultado de uma escolha ou descuido do próprio grupo.
+          - code: H-A3
+            kind: positive
+            text: O autor do comentário enquadra denúncias de discriminação como instrumentalização política ou busca de vantagem, deslegitimando o sofrimento ao atribuir motivações ocultas ao grupo social a que se refere.
+          - code: H-A-NEG
+            kind: negative
+            text: O autor do comentário reconhece dano real e atribui sua responsabilidade a fatores externos ao grupo, como agressores, estruturas sociais ou contextos institucionais.
+          - code: H-A-NEU
+            kind: neutral
+            text: O autor do comentário descreve conflito ou violência envolvendo o grupo social a que se refere sem emitir julgamento sobre quem é responsável pelo dano sofrido.
+      - code: harm_denial
+        name: Negação ou minimização do dano
+        hypotheses:
+          - code: H-B1
+            kind: positive
+            text: O autor do comentário afirma que o sofrimento relatado pelo grupo social a que se refere é exagerado, inventado ou desproporcional, questionando a veracidade ou a extensão do dano.
+          - code: H-B2
+            kind: positive
+            text: O autor do comentário enquadra denúncias de violência ou discriminação como hipersensibilidade, fraqueza ou incapacidade de lidar com a vida, normalizando o dano como algo trivial ou inevitável.
+          - code: H-B3
+            kind: positive
+            text: O autor do comentário nega que a violência ou discriminação sofrida pelo grupo social a que se refere tenha consequências reais ou duradouras e sugere benefício em dramatizar o papel de vítima.
+          - code: H-B-NEG
+            kind: negative
+            text: O autor do comentário reconhece a gravidade e a realidade do sofrimento relatado, mesmo quando discorda de aspectos da narrativa ou das soluções propostas.
+          - code: H-B-NEU
+            kind: neutral
+            text: O autor do comentário descreve ou analisa o sofrimento do grupo social a que se refere sem julgar a veracidade, a extensão ou a legitimidade do dano relatado.
+      - code: victim_offender_reversal
+        name: Inversão de vítima e agressor
+        hypotheses:
+          - code: H-C1
+            kind: positive
+            text: O autor do comentário apresenta o grupo dominante como vítima de agressão por parte do grupo social a que se refere em uma situação específica, invertendo a direção do dano numa relação de conflito assimétrico.
+          - code: H-C2
+            kind: positive
+            text: O autor do comentário enquadra denúncias, reivindicações ou a visibilidade do grupo social a que se refere como agressão, perseguição ou censura contra o grupo dominante.
+          - code: H-C3
+            kind: positive
+            text: O autor do comentário ataca a credibilidade ou o caráter de quem denuncia opressão, tratando a denúncia como prova de má-fé, manipulação ou interesse oculto.
+          - code: H-C-NEG
+            kind: negative
+            text: O autor do comentário descreve uma situação de conflito entre grupos reconhecendo a assimetria de poder e identificando corretamente quem ocupa a posição de maior vulnerabilidade na relação.
+          - code: H-C-NEU
+            kind: neutral
+            text: O autor do comentário descreve tensão ou conflito entre grupos sem atribuir explicitamente papéis de vítima e agressor.
+
+  - code: factualization
+    name: Produção de factualidade no discurso de ódio
+    constructs:
+      - code: suspicious_factualization
+        name: Factualização dubitativa ou por suspeita
+        hypotheses:
+          - code: H-A1
+            kind: positive
+            text: O autor do comentário usa modalizadores dubitativos para sugerir que o grupo social a que se refere pode estar associado a ameaça, criminalidade, corrupção, privilégio indevido ou outro problema social.
+          - code: H-A2
+            kind: positive
+            text: O autor do comentário apresenta correlação temporal, coincidência, indício ou padrão aparente para insinuar responsabilidade do grupo social a que se refere sem afirmar diretamente a acusação.
+          - code: H-A3
+            kind: positive
+            text: O autor do comentário formula pergunta retórica, rumor ou conjectura que coloca em circulação uma acusação factual contra o grupo social a que se refere, mantendo para si uma margem de negação.
+          - code: H-A-NEG
+            kind: negative
+            text: O autor do comentário expressa dúvida genuína, pergunta informativa ou incerteza sem atacar, inferiorizar ou suspeitar de um grupo social como problema.
+          - code: H-A-NEU
+            kind: neutral
+            text: O autor do comentário relata que uma suspeita foi levantada por terceiros ou analisa esse tipo de suspeita sem endossá-la.
+      - code: categorical_factualization
+        name: Factualização categórica
+        hypotheses:
+          - code: H-B1
+            kind: positive
+            text: O autor do comentário apresenta uma afirmação factual direta e acusatória sobre o grupo social a que se refere, formulada como simples descrição do mundo, sem indicar que se trata de opinião ou interpretação.
+          - code: H-B2
+            kind: positive
+            text: O autor do comentário usa formulações extremas, como todos, sempre, nunca ou ninguém, para apresentar o grupo social a que se refere ou o problema como absoluto, permanente ou incontornável.
+          - code: H-B3
+            kind: positive
+            text: O autor do comentário mobiliza dados, números, estatísticas, evidências ou linguagem empiricista para apresentar a acusação contra o grupo social a que se refere como fato que fala por si.
+          - code: H-B4
+            kind: positive
+            text: O autor do comentário atribui a acusação contra o grupo social a que se refere a fontes apresentadas como autorizadas a saber (autoridades, especialistas, instituições, testemunhas ou categorias sociais) ou a formula de modo impessoal, como conhecimento constatado ou já demonstrado, removendo-se como responsável pela afirmação.
+          - code: H-B6
+            kind: positive
+            text: O autor do comentário antecipa acusações de preconceito, interesse ou extremismo para proteger a descrição e construir a si próprio como racional ou imparcial.
+          - code: H-B7
+            kind: positive
+            text: O autor do comentário pressupõe como fato uma acusação contra o grupo social a que se refere que deveria ser demonstrada, usando-a como ponto de partida não problematizado.
+          - code: H-B-NEG
+            kind: negative
+            text: O autor do comentário não apresenta uma descrição categórica do mundo social para sustentar ataque, inferiorização, exclusão ou acusação contra um grupo.
+          - code: H-B-NEU
+            kind: neutral
+            text: O autor do comentário descreve, cita ou analisa recursos de factualização sem endossar a descrição hostil como afirmação própria.
+
+  - code: social_dominance
+    name: Dominância social discursiva
+    constructs:
+      - code: hierarchy_naturalization
+        name: Naturalização da hierarquia
+        hypotheses:
+          - code: H-A1
+            kind: positive
+            text: O autor do comentário afirma que a inferioridade das pessoas do grupo social a que se refere, ou a superioridade de outro grupo, é natural, inata ou biológica.
+          - code: H-A2
+            kind: positive
+            text: O autor do comentário apresenta a desigualdade ou a hierarquia entre grupos sociais como natural, inevitável ou como a ordem correta das coisas.
+          - code: H-A3
+            kind: positive
+            text: O autor do comentário afirma que a posição inferior das pessoas do grupo social a que se refere resulta apenas de falta de mérito, esforço ou capacidade próprios, negando causas estruturais.
+          - code: H-A-NEG
+            kind: negative
+            text: O autor do comentário reconhece ou denuncia a desigualdade entre grupos atribuindo-a a causas sociais, históricas ou estruturais, e não a uma inferioridade natural do grupo.
+          - code: H-A-NEU
+            kind: neutral
+            text: O autor do comentário descreve ou analisa discursos de hierarquia natural entre grupos sem endossá-los como afirmação própria.

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+outputs/layer3/
+outputs/layer4/
+outputs/evaluation/
+outputs/postgres/
+data/*.csv
+data/*.parquet
+.env

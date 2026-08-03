@@ -1,0 +1,177 @@
+dimensions:
+  - code: disrespect
+    name: Desrespeito
+    constructs:
+      - code: core
+        name: Desconsideração hostil
+        hypotheses:
+          - code: H-DIS-1
+            kind: positive
+            text: O comentário trata uma pessoa ou grupo com desprezo ou desrespeito.
+          - code: H-DIS-2
+            kind: positive
+            text: O comentário desqualifica a dignidade, a posição ou a experiência do alvo.
+          - code: H-DIS-3
+            kind: positive
+            text: O comentário usa linguagem hostil para demonstrar desconsideração pelo alvo.
+          - code: H-DIS-NEG
+            kind: negative
+            text: O comentário apresenta discordância ou crítica sem desrespeitar pessoas ou grupos.
+          - code: H-DIS-NEU
+            kind: neutral
+            text: O comentário descreve uma divergência de modo informativo ou analítico, sem hostilidade.
+
+  - code: insult
+    name: Insulto
+    constructs:
+      - code: core
+        name: Ofensa direta
+        hypotheses:
+          - code: H-INS-1
+            kind: positive
+            text: O comentário dirige um xingamento ou epíteto ofensivo a uma pessoa ou grupo.
+          - code: H-INS-2
+            kind: positive
+            text: O comentário chama o alvo de estúpido, inútil, desprezível ou moralmente inferior.
+          - code: H-INS-3
+            kind: positive
+            text: O comentário usa linguagem abusiva com a finalidade de ofender diretamente o alvo.
+          - code: H-INS-NEG
+            kind: negative
+            text: O comentário critica uma ideia, decisão ou comportamento sem xingar a pessoa ou o grupo.
+          - code: H-INS-NEU
+            kind: neutral
+            text: O comentário cita ou analisa um insulto sem adotá-lo como afirmação própria.
+
+  - code: humiliation
+    name: Humilhação
+    constructs:
+      - code: core
+        name: Rebaixamento e ridicularização
+        hypotheses:
+          - code: H-HUM-1
+            kind: positive
+            text: O comentário procura envergonhar, rebaixar ou humilhar uma pessoa ou grupo.
+          - code: H-HUM-2
+            kind: positive
+            text: O comentário ridiculariza o alvo para diminuir seu valor diante de outras pessoas.
+          - code: H-HUM-3
+            kind: positive
+            text: O comentário celebra ou deseja a vergonha e a degradação pública do alvo.
+          - code: H-HUM-NEG
+            kind: negative
+            text: O comentário relata um constrangimento sem defender a humilhação do alvo.
+          - code: H-HUM-NEU
+            kind: neutral
+            text: O comentário discute a ocorrência de humilhação de maneira descritiva ou crítica.
+
+  - code: dehumanization
+    name: Desumanização
+    constructs:
+      - code: core
+        name: Negação de humanidade
+        hypotheses:
+          - code: H-DEH-1
+            kind: positive
+            text: O comentário compara pessoas de um grupo a animais, parasitas, pragas ou seres irracionais.
+          - code: H-DEH-2
+            kind: positive
+            text: O comentário nega a pessoas de um grupo dignidade, sentimentos ou valor humano.
+          - code: H-DEH-3
+            kind: positive
+            text: O comentário trata pessoas de um grupo como objetos descartáveis ou problemas a eliminar.
+          - code: H-DEH-NEG
+            kind: negative
+            text: O comentário condena um comportamento sem negar a humanidade ou a dignidade de um grupo.
+          - code: H-DEH-NEU
+            kind: neutral
+            text: O comentário cita ou analisa linguagem desumanizante sem endossá-la.
+
+  - code: violence
+    name: Violência
+    constructs:
+      - code: core
+        name: Legitimação de dano físico
+        hypotheses:
+          - code: H-VIO-1
+            kind: positive
+            text: O comentário defende, justifica ou celebra agressão física contra uma pessoa ou grupo.
+          - code: H-VIO-2
+            kind: positive
+            text: O comentário apresenta a violência como resposta merecida ou aceitável contra o alvo.
+          - code: H-VIO-3
+            kind: positive
+            text: O comentário incentiva violência física ou sexual contra o alvo.
+          - code: H-VIO-NEG
+            kind: negative
+            text: O comentário condena ou noticia uma violência sem justificá-la ou incentivá-la.
+          - code: H-VIO-NEU
+            kind: neutral
+            text: O comentário descreve um episódio violento sem aprovar a agressão.
+
+  - code: exclusion
+    name: Exclusão
+    constructs:
+      - code: core
+        name: Expulsão e retirada de direitos
+        hypotheses:
+          - code: H-EXC-1
+            kind: positive
+            text: O comentário defende expulsar, separar ou impedir que um grupo participe da sociedade.
+          - code: H-EXC-2
+            kind: positive
+            text: O comentário propõe retirar direitos, oportunidades ou proteção de pessoas de um grupo.
+          - code: H-EXC-3
+            kind: positive
+            text: O comentário afirma que um grupo não pertence ao país, à comunidade ou a um espaço social.
+          - code: H-EXC-NEG
+            kind: negative
+            text: O comentário debate regras ou políticas sem defender exclusão de pessoas por sua identidade.
+          - code: H-EXC-NEU
+            kind: neutral
+            text: O comentário descreve exclusão social sem apoiá-la.
+
+  - code: identity_attack
+    name: Ataque identitário
+    constructs:
+      - code: core
+        name: Hostilidade baseada em pertencimento
+        hypotheses:
+          - code: H-IDA-1
+            kind: positive
+            text: O comentário ataca alguém por seu pertencimento racial, de gênero, sexual, religioso, regional, etário, corporal, de classe ou por deficiência.
+          - code: H-IDA-2
+            kind: positive
+            text: O comentário generaliza uma característica negativa para todas as pessoas de um grupo identitário.
+          - code: H-IDA-3
+            kind: positive
+            text: A hostilidade do comentário é dirigida à identidade social do alvo e não apenas a uma conduta individual.
+          - code: H-IDA-NEG
+            kind: negative
+            text: O comentário critica uma ação individual ou uma ideia sem atacar uma identidade social.
+          - code: H-IDA-NEU
+            kind: neutral
+            text: O comentário menciona um grupo identitário de maneira descritiva, sem avaliação hostil.
+
+  - code: threat
+    name: Ameaça
+    constructs:
+      - code: core
+        name: Intimidação e dano futuro
+        hypotheses:
+          - code: H-THR-1
+            kind: positive
+            text: O comentário ameaça causar dano físico futuro a uma pessoa ou grupo.
+          - code: H-THR-2
+            kind: positive
+            text: O comentário usa a possibilidade de violência para intimidar ou obrigar o alvo a agir.
+          - code: H-THR-3
+            kind: positive
+            text: O comentário anuncia retaliação, perseguição ou punição violenta contra o alvo.
+          - code: H-THR-NEG
+            kind: negative
+            text: O comentário relata ou condena uma ameaça sem ameaçar o alvo.
+          - code: H-THR-NEU
+            kind: neutral
+            text: O comentário menciona risco ou perigo de forma informativa, sem intenção de intimidar.
+

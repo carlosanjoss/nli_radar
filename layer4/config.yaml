@@ -1,0 +1,51 @@
+model:
+  name: joeddav/xlm-roberta-large-xnli
+  device: auto
+  batch_size: 8
+  max_length: 512
+  local_files_only: false
+  use_amp: true
+  score_mode: entailment_vs_contradiction
+  label_ids:
+    contradiction: 0
+    neutral: 1
+    entailment: 2
+
+hypotheses_file: layer4/hypotheses.yaml
+
+input:
+  path: data/reddit_tupye_2500_psicologia_sem_gabarito.csv
+  text_column: auto
+  id_column: auto
+  sample_limit: null
+  # A arquitetura do manual prevê que apenas conteúdo já classificado como ódio
+  # chegue à camada 4. Se o CSV tiver essa previsão, informe a coluna aqui ou
+  # passe --gate-column. Sem gate, a execução é exploratória sobre toda a amostra.
+  gate:
+    column: null
+    positive_values: [1, true, hate, sim, positivo]
+
+output_dir: outputs/layer4
+
+runtime:
+  comment_batch_size: 16
+
+aggregation:
+  # Dentro de cada construto: 70% do maior score e 30% da média.
+  max_weight: 0.70
+  mean_weight: 0.30
+  # Hipóteses NEG/NEU funcionam como contraprovas e reduzem o score positivo.
+  counter_weight: 0.50
+  # Entre os construtos de uma dimensão.
+  construct_max_weight: 0.70
+  construct_mean_weight: 0.30
+
+# Limiares iniciais, não validados. Calibre em um subconjunto anotado por humanos.
+thresholds:
+  default: 0.65
+  dimensions:
+    dehumanization: 0.65
+    authoritarianism: 0.65
+    revictimization: 0.65
+    factualization: 0.65
+    social_dominance: 0.65
